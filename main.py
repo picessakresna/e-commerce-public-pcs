@@ -191,7 +191,6 @@ with col2:
 fig, ax = plt.subplots(figsize=(12, 6))
 sns.barplot(x=review_score.index, 
             y=review_score.values,
-            hue=review_score.value_counts().index[0],
             legend=False,  
             order=review_score.index,
             palette=["#068DA9" if score == common_score else "#D3D3D3" for score in review_score.index]
